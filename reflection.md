@@ -13,6 +13,7 @@
 - If yes, describe at least one change and why you made it.
 
 ---
+add the pet, see schedule, see why it is important thee order.
 
 ## 2. Scheduling Logic and Tradeoffs
 
