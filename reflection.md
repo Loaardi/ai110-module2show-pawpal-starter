@@ -5,13 +5,40 @@
 **a. Initial design**
 
 - Briefly describe your initial UML design.
+Each owner manages one schedule and can have multiple pets. Each pet requires multiple tasks, and the schedule contains all tasks. This structure enables the app to assign, track, and prioritize pet care activities for each owner's pets.
+
 - What classes did you include, and what responsibilities did you assign to each?
+class Task:
+   Represents a pet care task with priority and due date.
+   Mark this task as complete.
+   Return the priority level of this task.
+
+class Pet:
+    Represents a pet with its attributes and care information.
+    Return the type of animal this pet is.
+    Return the care needs for this animal.
+    Return the priority level for this pet's care.
+
+class Schedule:
+    Manages a calendar of tasks for pet care.
+    Initialize the schedule with an empty calendar.
+    Add a task to the schedule.
+    Remove a task from the schedule.
+    Display the current schedule.
+
+class Owner:
+    Represents a pet owner with basic information.
+    Initialize an owner with name and age.
+    Return the owner's name.
+    Return the owner's age.    
 
 **b. Design changes**
 
 - Did your design change during implementation?
-- If yes, describe at least one change and why you made it.
+Yes
 
+- If yes, describe at least one change and why you made it.
+add completed for task class.
 ---
 add the pet, see schedule, see why it is important thee order.
 
