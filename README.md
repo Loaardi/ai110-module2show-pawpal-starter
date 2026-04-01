@@ -32,6 +32,24 @@ This implementation includes advanced scheduling features for better pet care ma
 - **Conflict Detection**: Detect same-time conflicts or overlaps within a time window, with lightweight warning messages.
 - **Animal-Specific Care**: Tailored care recommendations based on pet type (e.g., walks for dogs, litter cleaning for cats).
 
+## Features (implemented algorithms)
+
+- Task tracking with `Task` entities, status updates (`complete_task()`), priority, and due date.
+- Pet model with `get_animal_needs()` and placeholder `get_priority()`.
+- Owner model with pet collection, owned schedule, and `get_all_tasks()` aggregator.
+- Schedule manager with a calendar map and methods: `add_task()`, `remove_task()`, `view_schedule()`.
+- Sorting by task time in `Scheduler.get_all_tasks()` and related fetch methods.
+- Recurrence support (`Task.is_recurring()`, `Task.next_occurrence()`, `get_tasks_for_window()`, `get_today_tasks()`).
+- Conflict warnings via `get_conflicts_for_task()`, `has_conflict()`, and `check_for_conflicts()`.
+- Filtering by pet and status in `Scheduler.filter_tasks()`.
+- Next task lookup through `Scheduler.get_next_task()`.
+- Streamlit UI integration for owner/pet creation, task management, schedule viewing, and completion actions.
+
+## 📸 Demo
+
+
+<a href="/course_images/ai110/image.png" target="_blank"><img src='/course_images/ai110/image.png' title='PawPal App' width='' alt='PawPal App' class='center-block' /></a>
+
 ## Getting started
 
 ### Setup
