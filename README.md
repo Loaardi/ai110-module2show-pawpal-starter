@@ -22,6 +22,16 @@ Your final app should:
 - Display the plan clearly (and ideally explain the reasoning)
 - Include tests for the most important scheduling behaviors
 
+## Smarter Scheduling
+
+This implementation includes advanced scheduling features for better pet care management:
+
+- **Time-based Sorting**: Tasks are automatically sorted by time for clear daily plans.
+- **Flexible Filtering**: Filter tasks by pet name, completion status, or both.
+- **Recurring Tasks**: Support for daily, weekly, monthly, and yearly tasks with automatic next-occurrence generation on completion.
+- **Conflict Detection**: Detect same-time conflicts or overlaps within a time window, with lightweight warning messages.
+- **Animal-Specific Care**: Tailored care recommendations based on pet type (e.g., walks for dogs, litter cleaning for cats).
+
 ## Getting started
 
 ### Setup
